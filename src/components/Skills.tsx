@@ -10,7 +10,7 @@ export function Skills() {
       eyebrow="Tech Stack"
       title="Skills &"
       highlight="Technologies"
-      subtitle="The languages, frameworks and tools I use to build complete products end-to-end."
+      subtitle="The languages, frameworks and databases I use to build complete products end-to-end."
       alt
     >
       <ul className="skills-grid">

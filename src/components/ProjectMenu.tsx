@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import type { Project } from '../data/portfolio'
+import { getProjectLinks, type Project } from '../data/portfolio'
 import { Icon } from './Icon'
 
 type ProjectMenuProps = {
@@ -15,6 +15,7 @@ export function ProjectMenu({ project, onView }: ProjectMenuProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const menuId = useId()
+  const links = getProjectLinks(project)
 
   useEffect(() => {
     if (!open) return
@@ -85,18 +86,21 @@ export function ProjectMenu({ project, onView }: ProjectMenuProps) {
             View Details
           </button>
 
-          {project.liveUrl ? (
-            <a
-              role="menuitem"
-              className="project-menu__item"
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-            >
-              <Icon name="external" size={16} />
-              Open Project
-            </a>
+          {links.length > 0 ? (
+            links.map((link) => (
+              <a
+                key={link.key}
+                role="menuitem"
+                className="project-menu__item"
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+              >
+                <Icon name={link.icon} size={16} />
+                {link.label}
+              </a>
+            ))
           ) : (
             <span role="menuitem" aria-disabled="true" className="project-menu__item is-disabled">
               <Icon name="external" size={16} />

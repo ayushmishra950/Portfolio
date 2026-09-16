@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, type CSSProperties } from 'react'
-import type { Project } from '../data/portfolio'
+import { getProjectLinks, type Project } from '../data/portfolio'
 import { Icon } from './Icon'
 
 type ProjectModalProps = {
@@ -12,6 +12,7 @@ type ProjectModalProps = {
 export function ProjectModal({ project, hue, onClose }: ProjectModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const titleId = useId()
+  const links = project ? getProjectLinks(project) : []
 
   useEffect(() => {
     const dialog = dialogRef.current
@@ -107,10 +108,18 @@ export function ProjectModal({ project, hue, onClose }: ProjectModalProps) {
             <button type="button" className="btn btn--ghost" onClick={close}>
               Close
             </button>
-            {project.liveUrl ? (
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary">
-                Open Project <Icon name="external" size={16} />
-              </a>
+            {links.length > 0 ? (
+              links.map((link, i) => (
+                <a
+                  key={link.key}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`btn ${i === 0 ? 'btn--primary' : 'btn--ghost'}`}
+                >
+                  {link.label} <Icon name={link.icon} size={16} />
+                </a>
+              ))
             ) : (
               <span className="btn btn--ghost is-disabled" aria-disabled="true">
                 Live link coming soon
