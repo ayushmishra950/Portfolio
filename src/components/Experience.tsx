@@ -10,7 +10,7 @@ export function Experience() {
       eyebrow="Career"
       title="Professional"
       highlight="Experience"
-      subtitle="1.8+ years building production web applications, APIs and mobile apps."
+      subtitle="1.8+ years building production web applications, APIs and dashboards."
     >
       <ol className="timeline">
         {experiences.map((job, i) => (

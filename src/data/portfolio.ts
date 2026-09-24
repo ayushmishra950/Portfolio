@@ -49,15 +49,15 @@ export const profile = {
   name: 'Aayush Mishra',
   initials: 'AM',
   role: 'Full Stack Developer',
-  roles: ['Full Stack Developer', 'React & React Native Developer', 'Node.js API Developer'],
+  roles: ['Full Stack Developer', 'React & Next.js Developer', 'Node.js API Developer'],
   experience: '1.8+ Years',
   availability: 'Open to new opportunities',
   tagline:
-    'I build enterprise web apps, social platforms and mobile apps with React, React Native, TypeScript, Node.js and MongoDB — from clean, responsive UI to secure, scalable APIs.',
+    'I build enterprise web apps, social platforms and real-time products with React, Next.js, TypeScript, Node.js and MongoDB — from clean, responsive UI to secure, scalable APIs.',
   about: [
     'I build fast, reliable and responsive applications — from pixel-perfect interfaces to scalable REST APIs.',
-    'Full Stack Developer with 1.8+ years of experience in React, Next.js, React Native (Expo), TypeScript, Node.js, Express.js and MongoDB. I have built enterprise applications, social platforms, authentication systems and scalable REST APIs.',
-    'Currently at Infonic Solution Pvt. Ltd., I am building a complete Office Management System and its mobile version with React Native Expo. I enjoy owning features end-to-end — database design, backend APIs, role-based security and responsive UI.',
+    'Full Stack Developer with 1.8+ years of experience in React, Next.js, TypeScript, Node.js, Express.js and MongoDB. I have built enterprise applications, social platforms, authentication systems and scalable REST APIs.',
+    'Currently at Infonic Solution Pvt. Ltd., I am building a complete Office Management System end-to-end. I enjoy owning features end-to-end — database design, backend APIs, role-based security and responsive UI.',
   ],
   email: 'mishra1234aayush@gmail.com',
   phone: '+91 9509279769',
@@ -98,7 +98,7 @@ export const socials: SocialLink[] = [
 
 export const heroHighlights: Highlight[] = [
   { icon: 'briefcase', title: '1.8+ Years', subtitle: 'Professional experience' },
-  { icon: 'mobile', title: 'Web + Mobile', subtitle: 'React & React Native Expo' },
+  { icon: 'bolt', title: 'End-to-End', subtitle: 'Frontend, APIs & databases' },
 ]
 
 /* ------------------------------------------------------------------
@@ -113,7 +113,6 @@ export const tech = {
   express: 'Express.js',
   next: 'Next.js',
   vite: 'React Vite',
-  expo: 'React Native (Expo)',
   javascript: 'JavaScript',
   typescript: 'TypeScript',
   postgresql: 'PostgreSQL',
@@ -137,7 +136,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Frontend',
     icon: 'monitor',
-    items: [tech.javascript, tech.typescript, tech.react, tech.next, tech.vite, tech.expo],
+    items: [tech.javascript, tech.typescript, tech.react, tech.next, tech.vite],
   },
   { title: 'Backend', icon: 'server', items: [tech.node, tech.express] },
   { title: 'Database', icon: 'database', items: [tech.mongodb, tech.postgresql] },
@@ -155,9 +154,8 @@ export const experiences: Experience[] = [
       'Built Admin, Manager and User role management system with JWT authentication.',
       'Developed project assignment and notification workflow between Admins, Managers and Users.',
       'Built responsive UI and scalable backend APIs.',
-      'Currently developing the mobile application version using React Native Expo.',
     ],
-    tags: [tech.vite, tech.typescript, tech.node, tech.express, tech.mongodb, tech.expo],
+    tags: [tech.vite, tech.typescript, tech.node, tech.express, tech.mongodb],
   },
   {
     role: 'Full Stack Developer',
@@ -210,17 +208,6 @@ export const projects: Project[] = [
       'Admin Approval Login',
     ],
     tech: [tech.vite, tech.typescript, tech.node, tech.express, tech.mongodb],
-  },
-  {
-    title: 'Jain Social Group Mobile App',
-    category: 'Mobile App',
-    icon: 'mobile',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Android and iOS app that gives group members mobile access to the platform, with events, announcements and real-time chat. Built with React Native Expo.',
-    features: ['Member Access', 'Events & Announcements', 'Real-Time Chat', 'Push Notifications'],
-    tech: [tech.expo],
   },
   {
     title: 'Hotel Management System',
@@ -279,61 +266,6 @@ export const projects: Project[] = [
     tech: ['Frontend', 'Authentication', 'Admin Dashboard'],
   },
   {
-    title: 'Marriage Certificate Translation App',
-    category: 'Mobile App',
-    icon: 'fileText',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Mobile app for ordering certified marriage certificate translations — upload the document, place an order and track it to delivery. Built with React Native Expo for Android and iOS.',
-    features: ['Document Upload', 'Order Placement', 'Order Tracking', 'Notifications'],
-    tech: [tech.expo],
-  },
-  {
-    title: 'Business Translation App',
-    category: 'Mobile App',
-    icon: 'briefcase',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Mobile app for business and corporate document translation requests, with order history and delivery updates. Built with React Native Expo for Android and iOS.',
-    features: ['Document Upload', 'Service Selection', 'Order History', 'Delivery Updates'],
-    tech: [tech.expo],
-  },
-  {
-    title: 'Muscat Assignment Help App',
-    category: 'Mobile App',
-    icon: 'graduation',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Assignment help app for students — submit assignment requirements, track progress and receive completed work on mobile. Built with React Native Expo for Android and iOS.',
-    features: ['Assignment Submission', 'Requirement Details', 'Order Tracking', 'Notifications'],
-    tech: [tech.expo],
-  },
-  {
-    title: 'Ireland Translation App',
-    category: 'Mobile App',
-    icon: 'globe',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Certified document translation app for Ireland, covering order placement, status tracking and document delivery. Built with React Native Expo for Android and iOS.',
-    features: ['Document Upload', 'Certified Translation Orders', 'Status Tracking', 'Notifications'],
-    tech: [tech.expo],
-  },
-  {
-    title: 'PDF Edit Tool Mobile App',
-    category: 'Mobile App',
-    icon: 'fileText',
-    androidUrl: '',
-    iosUrl: '',
-    description:
-      'Mobile version of the PDF tool — merge, split and reorganise PDF documents straight from a phone. Built with React Native Expo.',
-    features: ['Merge PDFs', 'Split PDFs', 'Reorder Pages', 'Save & Share'],
-    tech: [tech.expo],
-  },
-  {
     title: 'Custom Form Builder',
     category: 'Web App',
     icon: 'clipboard',
@@ -348,6 +280,36 @@ export const projects: Project[] = [
       'User Authentication',
     ],
     tech: [tech.react, tech.typescript, tech.node, tech.express, tech.mongodb],
+  },
+{
+    title: 'API Monitoring Platform',
+    category: 'Web App',
+    icon: 'server',
+    liveUrl: 'https://api-monitering-plateform.onrender.com',
+    description:
+      'Monitoring platform for API endpoints — register the APIs to watch, track their health and response status, and review the monitoring history from one dashboard.',
+    features: ['Endpoint Registration', 'Health Monitoring', 'Response Status Logs', 'Monitoring Dashboard'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
+  },
+  {
+    title: 'Real-Time Chat & Collaboration Platform',
+    category: 'Web App',
+    icon: 'send',
+    liveUrl: 'https://real-time-chat-collaboration-platform.onrender.com',
+    description:
+      'Real-time chat and collaboration workspace with 1:1 conversations, team groups and file sharing, kept live over WebSockets with typing indicators, presence and read receipts.',
+    features: ['Real-Time Messaging', '1:1 & Group Chats', 'Typing & Presence', 'Delivery & Read Receipts', 'File & Image Sharing', 'JWT Authentication'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
+  },
+  {
+    title: 'Influencer Website',
+    category: 'Web App',
+    icon: 'star',
+    liveUrl: 'https://influencer-website-user-panel.onrender.com',
+    description:
+      'Creator directory for brand collaborations where every profile is reviewed before it goes live — brands search creators by name, niche or city and see rates and channels on a single profile.',
+    features: ['Verified Creator Profiles', 'Search by Niche & City', 'Published Creator Rates', 'Instagram & YouTube Links', 'Campaign Formats', 'Admin Review & Approval'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
   },
 ]
 

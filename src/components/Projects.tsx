@@ -45,7 +45,7 @@ export function Projects() {
       eyebrow="Portfolio"
       title="Featured"
       highlight="Projects"
-      subtitle="Enterprise systems, social platforms and mobile apps I have designed and developed."
+      subtitle="Enterprise systems, social platforms and real-time web products I have designed and developed."
       alt
     >
       {categories.length > 2 && (
