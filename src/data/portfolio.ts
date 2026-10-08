@@ -194,7 +194,7 @@ export const projects: Project[] = [
     title: 'Jain Social Group Online',
     category: 'Social Platform',
     icon: 'users',
-    liveUrl: '',
+    liveUrl: 'https://club-frontend-user.onrender.com',
     description:
       'Community platform for a social group with events, memberships and real-time chat. New users require Admin approval before they can log in.',
     features: [
@@ -223,7 +223,7 @@ export const projects: Project[] = [
     title: 'Social Media Platform',
     category: 'Social Platform',
     icon: 'send',
-    liveUrl: '',
+    liveUrl: 'https://social-media-4hxh.onrender.com',
     description:
       'Social media application with user authentication, posts, follow / unfollow functionality and real-time chat.',
     features: ['User Authentication', 'Posts', 'Follow / Unfollow', 'Real-Time Chat'],
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     title: 'Stock Management System',
     category: 'Enterprise',
     icon: 'layers',
-    liveUrl: '',
+    liveUrl: 'https://stock-managment-system-cfv9.onrender.com',
     description:
       'Inventory and stock tracking system for managing products, stock movement and suppliers from a single dashboard.',
     features: [
@@ -249,7 +249,7 @@ export const projects: Project[] = [
     title: 'PDF Edit Tool',
     category: 'Web App',
     icon: 'fileText',
-    liveUrl: '',
+    liveUrl: 'https://pdf-testing-7nxz.onrender.com',
     description:
       'Browser-based PDF tool for editing and reorganising documents without installing any desktop software.',
     features: ['Merge PDFs', 'Split PDFs', 'Reorder Pages', 'Edit & Annotate', 'Download Output'],
@@ -259,7 +259,7 @@ export const projects: Project[] = [
     title: 'E-Commerce Platform',
     category: 'Web App',
     icon: 'cart',
-    liveUrl: '',
+    liveUrl: 'https://ecommerce-zmop.onrender.com',
     description:
       'Online store with product listing, shopping cart, authentication and an admin dashboard, built with modern frontend technologies.',
     features: ['Product Listing', 'Shopping Cart', 'Authentication', 'Admin Dashboard'],
@@ -269,7 +269,7 @@ export const projects: Project[] = [
     title: 'Custom Form Builder',
     category: 'Web App',
     icon: 'clipboard',
-    liveUrl: '',
+    liveUrl: 'https://form-z06g.onrender.com',
     description:
       'Platform where users build their own forms, publish and share them with a link, and review every submitted response from their dashboard.',
     features: [
@@ -281,7 +281,7 @@ export const projects: Project[] = [
     ],
     tech: [tech.react, tech.typescript, tech.node, tech.express, tech.mongodb],
   },
-{
+  {
     title: 'API Monitoring Platform',
     category: 'Web App',
     icon: 'server',
@@ -309,6 +309,46 @@ export const projects: Project[] = [
     description:
       'Creator directory for brand collaborations where every profile is reviewed before it goes live — brands search creators by name, niche or city and see rates and channels on a single profile.',
     features: ['Verified Creator Profiles', 'Search by Niche & City', 'Published Creator Rates', 'Instagram & YouTube Links', 'Campaign Formats', 'Admin Review & Approval'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
+  },
+  {
+    title: 'Certificate Verification System',
+    category: 'Web App',
+    icon: 'shield',
+    liveUrl: 'https://certificate-verify-dzwz.onrender.com',
+    description:
+      'Web platform for issuing certificates and verifying their authenticity online, so anyone can confirm a certificate is genuine in seconds.',
+    features: ['Certificate Verification', 'Authenticity Check', 'Admin Management'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
+  },
+  {
+    title: 'Map & Location Search',
+    category: 'Web App',
+    icon: 'location',
+    liveUrl: 'https://map-f1b0.onrender.com',
+    description:
+      'Google-Maps-style application for searching places and locations on an interactive map.',
+    features: ['Location Search', 'Interactive Map', 'Place Details'],
+    tech: [tech.react, tech.node, tech.express],
+  },
+  {
+    title: 'Coaching Management Software',
+    category: 'Enterprise',
+    icon: 'graduation',
+    liveUrl: 'https://coaching-pck2.onrender.com',
+    description:
+      'Coaching institute software for managing students, courses and day-to-day operations from one place.',
+    features: ['Student Management', 'Course Management', 'Admin Dashboard'],
+    tech: [tech.react, tech.node, tech.express, tech.mongodb],
+  },
+  {
+    title: 'Business & Review Management',
+    category: 'Web App',
+    icon: 'star',
+    liveUrl: 'https://business-and-review-manage-website.onrender.com',
+    description:
+      'Platform where businesses list themselves and customers leave reviews, with management tools to track feedback.',
+    features: ['Business Listings', 'Customer Reviews', 'Review Management'],
     tech: [tech.react, tech.node, tech.express, tech.mongodb],
   },
 ]

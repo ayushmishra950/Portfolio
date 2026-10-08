@@ -78,10 +78,11 @@ export function Contact() {
               const data = new FormData(e.currentTarget)
               const name = String(data.get('name') ?? '').trim()
               const email = String(data.get('email') ?? '').trim()
-              const subject = String(data.get('subject') ?? '').trim() || `Portfolio enquiry from ${name}`
+              const subject = String(data.get('subject') ?? '').trim() || 'Portfolio enquiry'
               const message = String(data.get('message') ?? '').trim()
-              const body = `${message}\n\n— ${name} (${email})`
-              window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+              const text = `*New portfolio enquiry*\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`
+              const number = profile.phone.replace(/\D/g, '')
+              window.open(`https://wa.me/${number}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer')
               setSent(true)
             }}
           >
@@ -115,7 +116,7 @@ export function Contact() {
             </button>
             {sent && (
               <p className="form__note" role="status">
-                <Icon name="check" size={16} /> Your email app should open with the message ready to send.
+                <Icon name="check" size={16} /> WhatsApp is opening with your message ready — just press send.
               </p>
             )}
           </form>
