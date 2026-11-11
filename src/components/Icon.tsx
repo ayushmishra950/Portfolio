@@ -3,6 +3,8 @@ import type { ReactNode } from 'react'
 export type IconName =
   | 'mail'
   | 'phone'
+  | 'message-circle'
+  | 'phone-call'
   | 'location'
   | 'github'
   | 'linkedin'

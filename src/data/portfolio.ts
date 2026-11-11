@@ -50,16 +50,16 @@ export const profile = {
   initials: 'AM',
   role: 'Full Stack Developer',
   roles: ['Full Stack Developer', 'React & Next.js Developer', 'Node.js API Developer'],
-  experience: '1.8+ Years',
+  experience: '2 Years',
   availability: 'Open to new opportunities',
   tagline:
     'I build enterprise web apps, social platforms and real-time products with React, Next.js, TypeScript, Node.js and MongoDB — from clean, responsive UI to secure, scalable APIs.',
   about: [
     'I build fast, reliable and responsive applications — from pixel-perfect interfaces to scalable REST APIs.',
-    'Full Stack Developer with 1.8+ years of experience in React, Next.js, TypeScript, Node.js, Express.js and MongoDB. I have built enterprise applications, social platforms, authentication systems and scalable REST APIs.',
+    'Full Stack Developer with 2 years of experience in React, Next.js, TypeScript, Node.js, Express.js and MongoDB. I have built enterprise applications, social platforms, authentication systems and scalable REST APIs.',
     'Currently at Infonic Solution Pvt. Ltd., I am building a complete Office Management System end-to-end. I enjoy owning features end-to-end — database design, backend APIs, role-based security and responsive UI.',
   ],
-  email: 'mishra1234aayush@gmail.com',
+  email: 'ayush950mishra@gmail.com',
   phone: '+91 9509279769',
   location: 'Bindayaka, Jaipur, Rajasthan',
   resumeUrl: '/Aayush_Mishra_Resume.pdf',
@@ -97,7 +97,7 @@ export const socials: SocialLink[] = [
 ]
 
 export const heroHighlights: Highlight[] = [
-  { icon: 'briefcase', title: '1.8+ Years', subtitle: 'Professional experience' },
+  { icon: 'briefcase', title: '2 Years', subtitle: 'Professional experience' },
   { icon: 'bolt', title: 'End-to-End', subtitle: 'Frontend, APIs & databases' },
 ]
 
@@ -127,7 +127,7 @@ export const codeSnippet: { fileName: string; variable: string; entries: [string
     ['location', 'Jaipur, Rajasthan'],
     ['frontend', [tech.react, tech.next, tech.typescript]],
     ['backend', [tech.node, tech.express, tech.mongodb]],
-    ['experience', '1.8+ years'],
+    ['experience', '2 years'],
     ['openToWork', true],
   ],
 }
@@ -172,6 +172,69 @@ export const experiences: Experience[] = [
 ]
 
 export const projects: Project[] = [
+  
+  {
+    title: 'WhatsApp CRM & Automation Platform',
+    category: 'Enterprise',
+    icon: 'message-circle',
+    liveUrl: '',
+    description:
+      'Advanced WhatsApp CRM platform designed to streamline customer communication, manage leads, automate conversations and improve sales workflows. Includes agent management, AI-powered chatbot automation, scheduled follow-ups and seminar management from a centralized dashboard.',
+    features: [
+      'WhatsApp Business Integration',
+      'Customer & Lead Management',
+      'Real-Time WhatsApp Chat',
+      'Agent Management & Assignment',
+      'AI-Powered Chatbot & Automatic Replies',
+      'Automated Follow-Up Scheduling',
+      'Manual & Automated Follow-Up',
+      'Lead Tracking & Conversation History',
+      'Seminar & Event Management',
+      'Bulk Messaging & Campaign Management',
+      'Team Communication & Monitoring',
+      'Customer Segmentation',
+      'Notifications & Reminders',
+      'Dashboard & Analytics',
+      'Role-Based Access Control',
+    ],
+    tech: [
+      tech.react,
+      tech.typescript,
+      tech.node,
+      tech.express,
+      tech.mongodb,
+    ],
+  },
+  {
+    title: 'AI Agent Calling & Voice Automation System',
+    category: 'Enterprise',
+    icon: 'phone-call',
+    liveUrl: '',
+    description:
+      'AI-powered voice calling platform designed to automate customer interactions, lead engagement and follow-up operations. Enables intelligent AI voice agents to make automated calls, interact with customers, handle conversations and streamline business communication.',
+    features: [
+      'AI Voice Agent',
+      'Automated Outbound Calling',
+      'AI-Powered Customer Conversations',
+      'Intelligent Call Handling',
+      'Automated Lead Follow-Ups',
+      'Lead & Customer Management',
+      'Call Scheduling & Management',
+      'Call History & Recording',
+      'Conversation Tracking',
+      'Call Status & Reports',
+      'Agent Performance Monitoring',
+      'Automated Notifications',
+      'Dashboard & Analytics',
+    ],
+    tech: [
+      tech.react,
+      tech.typescript,
+      tech.node,
+      tech.express,
+      tech.mongodb,
+    ],
+  },
   {
     title: 'Office Management System',
     category: 'Enterprise',
@@ -386,7 +449,7 @@ export const getProjectLinks = (project: Project): ProjectLink[] => {
 
 /* Counters are derived from the data above, so they stay in sync. */
 export const stats: Stat[] = [
-  { value: '1.8+', label: 'Years of experience' },
+  { value: '2', label: 'Years of experience' },
   { value: `${projects.length}+`, label: 'Major projects' },
   { value: `${experiences.length}`, label: 'Companies' },
   { value: `${skillGroups.reduce((total, group) => total + group.items.length, 0)}+`, label: 'Technologies' },
